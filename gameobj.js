@@ -4,4 +4,7 @@ class GameObject {
     this.width = w;
     this.position = new Position(x,y);
   }
+  draw() {
+    main.ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
+  }
 }

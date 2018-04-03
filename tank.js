@@ -6,4 +6,9 @@ class Tank extends GameObject {
     this.bullets = [];
     this.id;
   }
+
+  /*draw() {
+    super.draw();
+    // // TODO: Add later
+  }*/
 }
