@@ -25,6 +25,14 @@ class Game {
 	  console.log(player.id)
 	  this.players[player.id] = player
   }
+    
+  tankShoot(tankId,x,y,angle, main, tank) {
+      var bullet = new Bullet(tankId,x,y,angle, main);
+      tank.bullets.push(bullet)
+      
+      this.gameObjects.push(bullet);
+  }
+    
   keyPressed(e) {
     var key = e.keyCode ? e.keyCode : e.which;
 	var direction = "";
